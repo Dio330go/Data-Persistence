@@ -70,7 +70,14 @@ public class MainManager : MonoBehaviour
 
     public void GameOver()
     {
+
         m_GameOver = true;
         GameOverText.SetActive(true);
+    }
+
+    [System.Serializable]
+    class SaveData
+    {
+        public string score; 
     }
 }
